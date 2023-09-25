@@ -2,5 +2,5 @@
 Learning how to use Datatables with Maxy Academy
 
 ---
-***NOTE***
+***NOTE:***
 <p>Put file in xampp\htdocs</p>
