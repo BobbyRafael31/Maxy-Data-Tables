@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Server Side Processing</title>
+        <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"> </script>
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable({
+                    processing: true,
+                    serverSide: true,
+                    ajax: 'scripts/server_processing.php',
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Email</th>
+                    <th>Birthdate</th>
+                    <th>Added</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Email</th>
+                    <th>Birthdate</th>
+                    <th>Added</th>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
